@@ -1,0 +1,17 @@
+def Ichidan る-> て|| [え|け|せ|て|ね|へ|め|れ|げ|ぜ|で|べ|ぺ|あ|か|さ|た|な|は|ま|や|ら|わ|が|ざ|だ|ぱ|ば]_.#.;
+def Godan1u う -> って || _.#.;
+def Godan1tsu つ -> って || _.#.;
+def Godan1ru る-> って || [い|き|し|ち|に|ひ|み|り|ぎ|じ|ぢ|び|ぴ|う|く|す|つ|ぬ|ふ|む|ゆ|る|ぐ|ず|ぶ|ぷ|お|こ|そ|と|の|ほ|も|よ|ろ|を|ご|ぞ|ど|ぼ|ぽ]_.#.;
+def Godan1 Godan1ru .o. Godan1tsu .o. Godan1u;
+def Godan2bu ぶ -> んで　|| _.#.;
+def Godan2mu む -> んで || _.#.;
+def Godan2nu ぬ -> んで || _.#.;
+def Godan2 Godan2bu .o. Godan2nu .o. Godan2mu;
+def Godan3 く-> いて || _.#.;
+def Godan4 ぐ-> いで || _.#.;
+def Godan Godan1 .o. Godan2 .o. Godan3 .o. Godan4;
+def IAdjective い -> くて || _.#.;
+def Suru する -> して || _.#.;
+def Kuru くる -> きて || _.#.;
+def TeForm Godan .o. Ichidan .o. IAdjective .o. Suru .o. Kuru;
+regex TeForm;

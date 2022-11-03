@@ -1,0 +1,26 @@
+digraph finite_state_machine {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	rankdir=LR;
+	node [shape = doublecircle]; "heading out the door";
+	node [shape = circle];
+	"making breakfast" -> "doing dishes";
+	"drinking water" -> "showering";
+	"getting out of bed" -> "drinking water";
+	"drinking water" -> "exercising";
+	"exercising" -> "showering";
+	"drinking water" -> "making breakfast";
+	"drinking water" -> "getting dressed";
+	"showering" -> "getting dressed";
+	"showering" -> "making breakfast";
+	"doing dishes" -> "getting dressed";
+	"making breakfast" -> "getting dressed";
+    "getting dressed" -> "brushing teeth";
+    "getting dressed" -> "making breakfast";
+    "brushing teeth" -> "grabbing what I need"
+	"grabbing what I need" -> "putting on shoes";
+    "putting on shoes" -> "grabbing what I need";
+	"brushing teeth" -> "putting on shoes";
+	"putting on shoes" -> "heading out the door";
+}
